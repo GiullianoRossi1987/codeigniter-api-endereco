@@ -54,6 +54,14 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 
-$route["login/"] = "Login";
-$route["login/auth"] = "Auth";
-// $route["endereco/"] = 
+$route["login/"] = "login";
+$route["login/auth"] = "usuario/login";
+$route["logoff"] = "usuario/logoff";
+$route["usuario/add"] = "usuario/cadastro";
+$route["usuario/check/email"] = "usuario/email_exists";
+$route["usuario/check/name"] = "usuario/name_exists";
+$route["cadastro_usuario"] = "usuario/cad";
+$route["enderecos"] = "endereco";
+
+$route["endereco/add"] = "endereco/add";
+$route["endereco/get"] = "endereco/get";

@@ -4,6 +4,8 @@ defined("BASEPATH") or die("No Direct Scripts Allowed");
 class Login extends CI_Controller{
 
     public function index(){
-        $this->load->view("login");
+        $this->load->library("session");
+		if(!$this->session->logged_usr) $this->load->view('login');
+        else $this->load->view("enderecos");
     }
 }

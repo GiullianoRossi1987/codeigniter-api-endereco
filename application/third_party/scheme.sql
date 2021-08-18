@@ -11,7 +11,8 @@ CREATE TABLE IF NOT EXISTS tb_endereco(
     vl_cidade VARCHAR(150) NOT NULL,
     vl_rua TEXT NOT NULL,
     vl_num INTEGER NOT NULL CHECK(vl_num > 0),
-    vl_bairro TEXT NOT NULL
+    vl_bairro TEXT NOT NULL,
+    vl_cep VARCHAR(11) NOT NULL
 );
 
 INSERT INTO tb_usuario (nm_usuario, vl_email, vl_password)
